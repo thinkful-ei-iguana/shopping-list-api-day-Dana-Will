@@ -16,6 +16,7 @@ const createItem = function (name) {
 
 const updateItem = function (id, updateData) {
   const updatedItem = JSON.stringify(updateData);
+  console.log(updatedItem);
   const options = {
     method: 'PATCH',
     headers: new Headers({'Content-Type': 'application/json'}),
