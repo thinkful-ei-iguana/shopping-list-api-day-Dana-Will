@@ -1,4 +1,4 @@
-import item from './item';
+
 
 const items = [];
 let hideCheckeditems = false;
@@ -35,7 +35,6 @@ const toggleCheckedFilter = function () {
 };
 
 const findAndUpdate = function (id, newData){
-  console.log(this.items.find(item=>item.id===id),newData);
   Object.assign(this.findById(id),newData);
 };
 
